@@ -1,0 +1,61 @@
+
+<html>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/datepicker3.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-table.js"></script>
+    <link rel="stylesheet" herf="css/style.css">
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+    <script type="text/javascript" src="js/google-map.js"></script>
+    <script type="text/javascript" src="canvasjs.min.js"></script>
+    <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#sidebar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#"><img src="hus.png"/></a>
+                    <ul class="user-menu">
+                        <li class="dropdown pull-right">
+                            <a href="#" ><svg class="glyph stroked male-user"><use xlink:href="#stroked-male-user"></use></svg> TRANG CHỦ <span class="caret"></span></a>
+                            <a href="#" ><svg class="glyph stroked male-user"><use xlink:href="#stroked-male-user"></use></svg> GIỚI THIỆU <span class="caret"></span></a>
+                            <a href="#" ><svg class="glyph stroked male-user"><use xlink:href="#stroked-male-user"></use></svg> LIÊN HỆ <span class="caret"></span></a>                            
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <span style="font-size: 32px"><center>HỆ THỐNG CẢNH BÁO TRƯỢT LỞ ĐẤT</center></span>
+        <div>
+            <table>
+                <tr>
+                    <td><canvas id="circlex" width="300" height="300"></canvas></td>
+                    <td><canvas id="circley" width="300" height="300"></canvas></td>
+                    <td><canvas id="circlez" width="300" height="300"></canvas></td>
+                </tr>
+                <tr >
+                    <td align="center"><output id="valuex"></output></td>
+                    <td align="center"><output id="valuey"></output></td>
+                    <td align="center"><output id="valuez"></output></td>
+                </tr>
+            </table>
+            <script type="text/javascript" src="js/circle.js"></script>
+            <script type="text/javascript" src="js/circley.js"></script>
+            <script type="text/javascript" src="js/circlez.js"></script>
+        </div>
+        <div id="googleMap" style="width: 1200px; height: 800px;"></div>
+    </body>
+</html>
